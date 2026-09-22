@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeekendWize</string>
+    <string name="login_title">Log In</string>
+    <string name="weekend_wise">Weekend Wise</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="log_in_button">LOG IN</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="dont_have_account_register">Don\'t have an account? Register</string>
+    <string name="continue_as_guest">Continue as Guest</string>
+</resources>
