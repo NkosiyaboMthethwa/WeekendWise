@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "297903978701",
+    "project_id": "weekendwize",
+    "storage_bucket": "weekendwize.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297903978701:android:eb445cf0c6298aa00e5184",
+        "android_client_info": {
+          "package_name": "com.example.weekendwize"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG5mSp9C8UhChHK2z2jfyzvSqPuzvqIpU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

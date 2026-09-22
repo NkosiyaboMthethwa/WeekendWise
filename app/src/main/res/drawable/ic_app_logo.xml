@@ -1,0 +1,63 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="256dp"
+    android:height="256dp"
+    android:viewportWidth="256"
+    android:viewportHeight="256">
+    <!-- Background rounded card -->
+    <path
+        android:fillColor="#004D40"
+        android:pathData="M40,0 L216,0 A40,40 0,0 1 256,40 L256,216 A40,40 0,0 1 216,256 L40,256 A40,40 0,0 1 0,216 L0,40 A40,40 0,0 1 40,0 Z" />
+
+    <!-- Red Graduation Cap -->
+    <path
+        android:fillColor="#EF5350"
+        android:pathData="M128,70 L210,105 L128,140 L46,105 Z" />
+    <path
+        android:fillColor="#C62828"
+        android:pathData="M100,128 L100,148 C100,155 156,155 156,148 L156,128 Z" />
+
+    <!-- Gold Tassel -->
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M178,105 L184,140"
+        android:strokeColor="#FFD54F"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"/>
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M184,142 A4,4 0,1 1 183.9,142 Z" />
+
+    <!-- White open book / roof shape -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,150 L124,126 L124,166 L50,190 Z" />
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M132,126 L206,150 L206,190 L132,166 Z" />
+
+    <!-- Bottom Symbols: "+ x", Gear icon, "R" -->
+    <!-- We can represent these cleanly with small white vector path designs or let them look neat -->
+    <!-- Symbol + and x on left -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M55,215 L63,215 M59,211 L59,219 M69,212 L75,218 M75,212 L69,218"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+
+    <!-- Small gear in center -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M128,212 A4,4 0,1 0 128,220 A4,4 0,1 0 128,212 Z"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5" />
+
+    <!-- Symbol R on right -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M195,211 L201,211 C204,211 204,215 201,215 L195,215 L195,219 M195,211 L195,219 M199,215 L202,219"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

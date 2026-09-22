@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_teal">#004D40</color>
+    <color name="login_button_red">#EF5350</color>
+    <color name="guest_button_gray">#F5F5F5</color>
+    <color name="input_field_border">#BDBDBD</color>
+
+    <color name="subject_math">#004D40</color>
+    <color name="subject_life_sciences">#4CAF50</color>
+    <color name="subject_physical_sci">#4472C4</color>
+    <color name="subject_accounting">#BF8F00</color>
+    <color name="weekend_box_bg">#FFF0F0</color>
+    <color name="weekend_box_border">#FFCDD2</color>
+    <color name="progress_box_bg">#F5F5F5</color>
+    <color name="nav_text_color">#004D40</color>
+</resources>
