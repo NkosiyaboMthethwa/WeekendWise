@@ -50,7 +50,7 @@ Recognizing that learners may have intermittent internet access, WeekendWize imp
 - **Automated Cloud Sync (`OfflineSyncManager.kt`)**: When an active internet connection is detected, pending offline actions are automatically uploaded to **Firebase Firestore** (NoSQL Cloud Store), and a completion notification is issued to the learner.
 
 ### 2.5 Real-Time Notification System
-Real-time push notifications are handled by `MyFirebaseMessagingService.kt` using Firebase Cloud Messaging (FCM). Local reminders, streak alerts, and sync updates are created via `NotificationHelper.kt` using system `NotificationChannel` (API 26+). A dedicated top-bar bell icon 🔔 allows learners to review, clear, or test notifications.
+Real-time push notifications are handled by `MyFirebaseMessagingService.kt` using Firebase Cloud Messaging (FCM). Local reminders, streak alerts, and sync updates are created via `NotificationHelper.kt` using system `NotificationChannel` (API 26+). A dedicated top-bar bell icon  allows learners to review, clear, or test notifications.
 
 ### 2.6 REST API Integration
 The app uses **Retrofit 2** and **Gson Converter** (`RetrofitClient.kt` & `ApiService.kt`) to connect to an external REST API (AdviceSlip API). This fetches live educational study advice and motivational tips asynchronously using Kotlin Coroutines (`lifecycleScope`) with offline fallback data.
