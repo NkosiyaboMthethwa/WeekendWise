@@ -33,4 +33,13 @@
     <string name="revision_tab">Ukubuyekeza</string>
     <string name="bookings_tab">Izincwadi</string>
     <string name="progress_tab">Inqubekelaphambili</string>
+    <string name="quiz_practice_title">Izivivinyo Ze-Quiz</string>
+    <string name="submit_button">THUMELA</string>
+    <string name="topics_title">Izihloko</string>
+    <string name="subtopics_title">Izihlokwana</string>
+    <string name="no_data_subtopics">Azikho izihlokwana ezikhona zaleli hloko njengamanje.</string>
+    <string name="correct_toast">Kushile!</string>
+    <string name="incorrect_toast">Akulungile.</string>
+    <string name="quiz_completed_toast">I-Quiz iphelile!</string>
+    <string name="please_select_answer">Sicela ukhethe impendulo</string>
 </resources>

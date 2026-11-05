@@ -5,17 +5,16 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class SplashActivity : AppCompatActivity() {
+class SplashActivity : BaseActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_splash)
-        
-        // Handle window insets for edge-to-edge support
+
         findViewById<android.view.View>(R.id.ivSplashLogo)?.let { view ->
             ViewCompat.setOnApplyWindowInsetsListener(view.parent as android.view.View) { v, insets ->
                 val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -24,7 +23,6 @@ class SplashActivity : AppCompatActivity() {
             }
         }
 
-        // Delay for 3 seconds, then navigate to MainActivity (Login)
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

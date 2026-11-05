@@ -33,4 +33,13 @@
     <string name="revision_tab">Revision</string>
     <string name="bookings_tab">Bookings</string>
     <string name="progress_tab">Progress</string>
+    <string name="quiz_practice_title">Quiz Practice</string>
+    <string name="submit_button">SUBMIT</string>
+    <string name="topics_title">Topics</string>
+    <string name="subtopics_title">Subtopics</string>
+    <string name="no_data_subtopics">No subtopics or activities available for this topic yet.</string>
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect answer.</string>
+    <string name="quiz_completed_toast">Quiz completed!</string>
+    <string name="please_select_answer">Please select an answer</string>
 </resources>

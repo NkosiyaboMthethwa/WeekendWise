@@ -21,7 +21,7 @@
         android:id="@+id/tvSubTopicListTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Subtopics"
+        android:text="@string/subtopics_title"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -31,10 +31,12 @@
         app:layout_constraintTop_toTopOf="@+id/topBar" />
 
     <ScrollView
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topBar">
 
         <LinearLayout

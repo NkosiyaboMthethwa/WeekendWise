@@ -8,11 +8,11 @@ import android.widget.RadioGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class QuizActivity : AppCompatActivity() {
+class QuizActivity : BaseActivity() {
+
     private var currentQuestionIndex = 0
     private lateinit var quiz: Quiz
     private var subjectName: String = "General"
@@ -34,7 +34,7 @@ class QuizActivity : AppCompatActivity() {
         subTopicName = intent.getStringExtra("SUBTOPIC_NAME") ?: ""
 
         if (quiz.questions.isEmpty()) {
-            Toast.makeText(this, "No questions found.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.no_data_subtopics), Toast.LENGTH_SHORT).show()
             finish()
             return
         }
@@ -45,7 +45,7 @@ class QuizActivity : AppCompatActivity() {
             val rgOptions = findViewById<RadioGroup>(R.id.rgOptions)
             val checkedId = rgOptions.checkedRadioButtonId
             if (checkedId == -1) {
-                Toast.makeText(this, "Please select an answer", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.please_select_answer), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
@@ -59,9 +59,9 @@ class QuizActivity : AppCompatActivity() {
 
             val question = quiz.questions[currentQuestionIndex]
             if (selectedIndex == question.correctOptionIndex) {
-                Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.correct_toast), Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(this, "Incorrect answer.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.incorrect_toast), Toast.LENGTH_SHORT).show()
             }
 
             if (currentQuestionIndex < quiz.questions.size - 1) {
@@ -69,7 +69,7 @@ class QuizActivity : AppCompatActivity() {
                 displayQuestion()
             } else {
                 markQuizCompleted()
-                Toast.makeText(this, "Quiz completed!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, getString(R.string.quiz_completed_toast), Toast.LENGTH_LONG).show()
                 finish()
             }
         }
@@ -77,12 +77,10 @@ class QuizActivity : AppCompatActivity() {
 
     private fun markQuizCompleted() {
         val prefs = getSharedPreferences("AppProgress", Context.MODE_PRIVATE)
-        // Store that this specific quiz is completed
         val key = "QUIZ_COMPLETED_${subjectName}_${subTopicName}"
         if (!prefs.getBoolean(key, false)) {
             prefs.edit().putBoolean(key, true).apply()
-            
-            // Also increment count for subject
+
             val countKey = "QUIZ_COUNT_${subjectName}"
             val currentCount = prefs.getInt(countKey, 0)
             prefs.edit().putInt(countKey, currentCount + 1).apply()

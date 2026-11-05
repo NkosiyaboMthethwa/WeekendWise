@@ -8,15 +8,10 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
-
-    override fun attachBaseContext(newBase: Context) {
-        super.attachBaseContext(LocaleHelper.onAttach(newBase))
-    }
+class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -86,7 +81,6 @@ class MainActivity : AppCompatActivity() {
     private fun performGoogleSso() {
         Toast.makeText(this, "Connecting to SSO Provider...", Toast.LENGTH_SHORT).show()
 
-        // Single Sign-On auto-authenticates user profile from Google / SSO identity provider
         val ssoName = "Alex Student"
         val ssoEmail = "alex.student@weekendwize.ac.za"
 

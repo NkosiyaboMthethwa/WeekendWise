@@ -6,11 +6,11 @@ import android.view.LayoutInflater
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class TopicListActivity : AppCompatActivity() {
+class TopicListActivity : BaseActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -33,7 +33,7 @@ class TopicListActivity : AppCompatActivity() {
             subject.topics.forEach { topic ->
                 val itemView = LayoutInflater.from(this).inflate(R.layout.item_topic, container, false)
                 itemView.findViewById<TextView>(R.id.tvTopicName).text = topic.name
-                
+
                 itemView.setOnClickListener {
                     val intent = Intent(this, SubTopicListActivity::class.java).apply {
                         putExtra("TOPIC", topic)

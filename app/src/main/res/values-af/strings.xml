@@ -33,4 +33,13 @@
     <string name="revision_tab">Hersiening</string>
     <string name="bookings_tab">Besprekings</string>
     <string name="progress_tab">Vordering</string>
+    <string name="quiz_practice_title">Vasvra Prikkeling</string>
+    <string name="submit_button">INDIEN</string>
+    <string name="topics_title">Onderwerpe</string>
+    <string name="subtopics_title">Subonderwerpe</string>
+    <string name="no_data_subtopics">Geen subonderwerpe beskikbaar nie.</string>
+    <string name="correct_toast">Korrek!</string>
+    <string name="incorrect_toast">Verkeerde antwoord.</string>
+    <string name="quiz_completed_toast">Vasvra voltooi!</string>
+    <string name="please_select_answer">Kies asseblief \'n antwoord</string>
 </resources>
