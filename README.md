@@ -1,4 +1,4 @@
-# 📱 WeekendWize - Grade 11 Study & Revision Mobile App
+#  WeekendWize - Grade 11 Study & Revision Mobile App
 
 [![Android CI Build & Automated Tests](https://github.com/NkosiyaboMthethwa/WeekendWise/actions/workflows/build.yml/badge.svg)](https://github.com/NkosiyaboMthethwa/WeekendWise/actions)
 ![Platform](https://img.shields.io/badge/Platform-Android-green.svg)
@@ -10,59 +10,59 @@
 
 ---
 
-## 📽️ Video Demonstrations
+##  Video Demonstrations
 - **Full Video Demonstration**: [Watch on YouTube](https://youtu.be/i15tblqFos0)
 - **Short Overview / Demo**: [Watch Youtube Short](https://youtube.com/shorts/kQ0tLo0ToB8)
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-### 🔐 1. Secure Authentication & Single Sign-On (SSO)
+###  1. Secure Authentication & Single Sign-On (SSO)
 - **Encrypted Registration & Login**: Passwords are securely hashed using `SHA-256` with a custom salt before being persisted (`SecurityUtils.kt`). Plaintext passwords are never stored.
 - **Single Sign-On (SSO)**: Native integration with **Google Sign-In / Credential Manager** for instant, frictionless account access.
 - **Guest Mode**: Read-only browsing for unregistered users to preview study notes without altering progress statistics.
 
-### 🌐 2. Multi-Language Support (South African Languages)
+### 2. Multi-Language Support (South African Languages)
 Full localization support across 3 languages:
 - 🇿🇦 **English** (Default)
 - 🇿🇦 **isiZulu** (`res/values-zu`)
 - 🇿🇦 **Afrikaans** (`res/values-af`)
 - Dynamic language switching implemented via `LocaleHelper.kt`.
 
-### 📚 3. CAPS Curriculum Subjects & Daily Quizzes
+### 3. CAPS Curriculum Subjects & Daily Quizzes
 Comprehensive study library covering 6 core CAPS Grade 11 subjects:
-1. 📐 **Mathematics** (Algebra, Functions & Graphs, Trigonometry)
-2. ⚛️ **Physical Sciences** (Newton's Laws, Chemical Bonding, Stoichiometry)
-3. 🧬 **Life Sciences** (Photosynthesis, Respiration, Animal Nutrition)
-4. 📊 **Accounting** (Partnerships, Cost Accounting, Budgeting)
-5. 💼 **Business Studies** (Business Environments, PESTLE, Ventures)
-6. 🌍 **Geography** (Geomorphology, Slope Elements, Climatology)
+1.  **Mathematics** (Algebra, Functions & Graphs, Trigonometry)
+2.  **Physical Sciences** (Newton's Laws, Chemical Bonding, Stoichiometry)
+3.  **Life Sciences** (Photosynthesis, Respiration, Animal Nutrition)
+4.  **Accounting** (Partnerships, Cost Accounting, Budgeting)
+5.  **Business Studies** (Business Environments, PESTLE, Ventures)
+6.  **Geography** (Geomorphology, Slope Elements, Climatology)
 
 *Every topic and subtopic includes interactive multiple-choice quizzes, detailed CAPS theory breakdowns, and quick revision notes.*
 
-### 🔄 4. Offline Mode with Automatic Cloud Sync
+###  4. Offline Mode with Automatic Cloud Sync
 - **Local Persistence**: Performs offline actions (booking tutoring sessions, completing quizzes) stored in a local **SQLite Database** (`OfflineDatabaseHelper.kt`).
 - **Network Observer**: `NetworkMonitor.kt` listens for active internet connections.
 - **Auto-Sync Engine**: `OfflineSyncManager.kt` automatically pushes offline actions to **Firebase Firestore** NoSQL database when reconnected, notifying the student upon completion.
 
-### 🔔 5. Real-Time Push & Local Notifications
+###  5. Real-Time Push & Local Notifications
 - **Firebase Cloud Messaging (FCM)**: `MyFirebaseMessagingService.kt` handles real-time cloud push notifications.
 - **Local Alerts**: `NotificationHelper.kt` creates system `NotificationChannel` alerts for study reminders, streak milestones, and sync confirmations.
-- **Interactive Notifications Panel**: Top bar bell icon 🔔 displays active alerts with options to clear, open, or trigger test pushes.
+- **Interactive Notifications Panel**: Top bar bell icon displays active alerts with options to clear, open, or trigger test pushes.
 
-### 🗓️ 6. Weekend Timetable & Session Bookings
+###  6. Weekend Timetable & Session Bookings
 - Interactive weekend schedule for booking Saturday & Sunday study slots.
 - Booked sessions dynamically update the Home Dashboard and track study commitments.
 
-### 📈 7. Dynamic Progress Analytics & Dark Mode
+### 7. Dynamic Progress Analytics & Dark Mode
 - **Progress Tracking**: Dynamic progress bars per subject and overall weekly completion percentage.
 - **Dark Mode**: Supports light and dark theme toggling with instant `AppCompatDelegate` night mode application.
 - **Live REST API Tip**: Integrates Retrofit 2 with the AdviceSlip REST API to fetch live motivational study tips.
 
 ---
 
-## 🧪 Automated Testing & CI/CD Pipeline
+## Automated Testing & CI/CD Pipeline
 
 The project includes unit tests and continuous integration setup:
 
@@ -78,7 +78,7 @@ The project includes unit tests and continuous integration setup:
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+## Tech Stack & Architecture
 
 | Component | Technology |
 | :--- | :--- |
@@ -97,7 +97,7 @@ The project includes unit tests and continuous integration setup:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 WeekendWize/
@@ -146,7 +146,7 @@ WeekendWize/
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 1. **Clone the Repository**:
    ```bash
@@ -179,5 +179,3 @@ WeekendWize/
 
 ---
 
-## 📄 License
-This project is created for educational purposes under **The Independent Institute of Education (Pty) Ltd**. All rights reserved.
