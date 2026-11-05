@@ -1,6 +1,6 @@
 #  WeekendWize - (Innovative Features)
 
-We are thrilled to announce the official **v2.0 Release of WeekendWize**! This major release brings a suite of innovative features engineered specifically for Grade 11 High School CAPS learners in South Africa—combining offline-first persistence, multi-language accessibility, real-time cloud sync, security encryption, and automated CI/CD pipelines.
+We are thrilled to announce the official **v2.0 Release of WeekendWize**! This major release brings a suite of innovative features engineered specifically for Grade 11 High School CAPS learners in South Africa combining offline first persistence, multi-language accessibility, real-time cloud sync, security encryption, and automated CI/CD pipelines.
 
 ---
 
@@ -35,7 +35,7 @@ We are thrilled to announce the official **v2.0 Release of WeekendWize**! This m
 ---
 
 ### 5. Complete CAPS Curriculum & Interactive Quizzes (6 Subjects)
-- **100% Subject & Subtopic Coverage**: Every single subject and subtopic now contains interactive multiple-choice quizzes, questions, theory guides, and revision notes.
+- **100% Subject & Subtopic Coverage**: Every single subject and subtopic now contains interactive multiple choice quizzes, questions, theory guides, and revision notes.
 - **Added 2 New CAPS Subjects**:
   - **Business Studies** (Business Environments, PESTLE, Entrepreneurship, Leadership)
   - **Geography** (Geomorphology, Slope Elements, Climatology, Synoptic Maps)
