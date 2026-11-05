@@ -11,8 +11,9 @@
 ---
 
 ##  Video Demonstrations
-- **Full Video Demonstration**: [Watch on YouTube](https://youtu.be/i15tblqFos0)
-- **Short Overview / Demo**: [Watch Youtube Short](https://youtube.com/shorts/kQ0tLo0ToB8)
+- **Full Video Demonstration**: [Watch on YouTube][(https://youtu.be/i15tblqFos0)](https://youtu.be/r8a_Kw1rW8k)
+- https://drive.google.com/file/d/1WngtvoAFG7pXESGfRq7UR2TaLVuWyJEL/view?usp=drive_link 
+- **Short Overview / Demo**: [Watch Youtube Short](https://youtube.com/shorts/kQ0tLo0ToB8) 
 
 ---
 
