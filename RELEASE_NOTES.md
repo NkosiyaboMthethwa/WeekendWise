@@ -4,7 +4,6 @@ We are thrilled to announce the official **v2.0 Release of WeekendWize**! This m
 
 ---
 
-##  What's New in Version 2.0
 
 ### 1. Cryptographic Password Security & 1-Tap Single Sign-On (SSO)
 - **SHA-256 Salted Hashing**: Replaced plain-text authentication with salted **SHA-256 cryptographic hashing** (`SecurityUtils.kt`). Your credentials are encrypted before storage and verification.
