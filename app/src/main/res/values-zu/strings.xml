@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">WeekendWize</string>
+    <string name="login_title">Ngena Ungene</string>
+    <string name="weekend_wise">Weekend Wise</string>
+    <string name="email_address">I-imeyili</string>
+    <string name="password">Iphasiwedi</string>
+    <string name="new_password">Iphasiwedi Entsha</string>
+    <string name="log_in_button">NGENA</string>
+    <string name="forgot_password">Ukhohlwe iphasiwedi?</string>
+    <string name="dont_have_account_register">Aunayo i-akhawunti? Bhalisa</string>
+    <string name="continue_as_guest">Qhubeka Njengesivakashi</string>
+    <string name="sso_google_login">Ngena nge-Google (SSO)</string>
+    <string name="register_title">Bhalisa</string>
+    <string name="register_button">BHALISA</string>
+    <string name="full_name">Igama Ephelele</string>
+    <string name="already_have_account">Usunayo i-akhawunti? Ngena</string>
+    <string name="settings_title">Izilungiselelo</string>
+    <string name="dark_mode">Imodi Emnyama</string>
+    <string name="account_settings">Izilungiselelo Ye-akhawunti</string>
+    <string name="update_account">BUYAKEZA I-AKHAWUNTI</string>
+    <string name="select_language">Ulimi / Language</string>
+    <string name="lang_english">IsiNgisi</string>
+    <string name="lang_zulu">IsiZulu</string>
+    <string name="lang_afrikaans">IsiBhunu</string>
+    <string name="offline_sync_status">Ukuhlanganisa Okungaxhunyiwe</string>
+    <string name="sync_now">VUMELANISA MANJE</string>
+    <string name="notifications_setting">Izaziso Zesikhathi Esingempela</string>
+    <string name="notifications">Izaziso</string>
+    <string name="back">Emuva</string>
+    <string name="resource_view">Inxusa Lemininingwane</string>
+    <string name="loading_content">Ilayisha okuqukethwe...</string>
+    <string name="home_tab">Ekhaya</string>
+    <string name="revision_tab">Ukubuyekeza</string>
+    <string name="bookings_tab">Izincwadi</string>
+    <string name="progress_tab">Inqubekelaphambili</string>
+</resources>

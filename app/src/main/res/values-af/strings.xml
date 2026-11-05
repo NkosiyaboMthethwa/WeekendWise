@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">WeekendWize</string>
+    <string name="login_title">Meld Aan</string>
+    <string name="weekend_wise">Weekend Wise</string>
+    <string name="email_address">E-posadres</string>
+    <string name="password">Wagwoord</string>
+    <string name="new_password">Nuwe Wagwoord</string>
+    <string name="log_in_button">MELD AAN</string>
+    <string name="forgot_password">Wagwoord vergeet?</string>
+    <string name="dont_have_account_register">Het jy nie \'n rekening nie? Registreer</string>
+    <string name="continue_as_guest">Gaan voort as Gas</string>
+    <string name="sso_google_login">Meld aan met Google (SSO)</string>
+    <string name="register_title">Registreer</string>
+    <string name="register_button">REGISTREER</string>
+    <string name="full_name">Volle Naam</string>
+    <string name="already_have_account">Het jy reeds \'n rekening? Meld Aan</string>
+    <string name="settings_title">Instellings</string>
+    <string name="dark_mode">Donker Modus</string>
+    <string name="account_settings">Rekeninginstellings</string>
+    <string name="update_account">OPDATEER REKENING</string>
+    <string name="select_language">Taal / Language</string>
+    <string name="lang_english">Engels</string>
+    <string name="lang_zulu">isiZulu</string>
+    <string name="lang_afrikaans">Afrikaans</string>
+    <string name="offline_sync_status">Offlyn Sinkronisering</string>
+    <string name="sync_now">SINKRONISEER NOU</string>
+    <string name="notifications_setting">Intydse Kennisgewings</string>
+    <string name="notifications">Kennisgewings</string>
+    <string name="back">Terug</string>
+    <string name="resource_view">Hulpbronbesigtiging</string>
+    <string name="loading_content">Laai inhoud...</string>
+    <string name="home_tab">Tuis</string>
+    <string name="revision_tab">Hersiening</string>
+    <string name="bookings_tab">Besprekings</string>
+    <string name="progress_tab">Vordering</string>
+</resources>
