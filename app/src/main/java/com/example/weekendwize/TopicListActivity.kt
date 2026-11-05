@@ -3,7 +3,6 @@ package com.example.weekendwize
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -38,6 +37,7 @@ class TopicListActivity : AppCompatActivity() {
                 itemView.setOnClickListener {
                     val intent = Intent(this, SubTopicListActivity::class.java).apply {
                         putExtra("TOPIC", topic)
+                        putExtra("SUBJECT_NAME", subject.name)
                     }
                     startActivity(intent)
                 }

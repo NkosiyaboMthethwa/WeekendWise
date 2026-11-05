@@ -36,6 +36,7 @@ class SubTopicListActivity : AppCompatActivity() {
         }
 
         val topic = intent.getParcelableExtra<Topic>("TOPIC")
+        val subjectName = intent.getStringExtra("SUBJECT_NAME") ?: "General"
 
         if (topic != null) {
 
@@ -92,10 +93,9 @@ class SubTopicListActivity : AppCompatActivity() {
                             this,
                             QuizActivity::class.java
                         ).apply {
-                            putExtra(
-                                "QUIZ",
-                                subTopic.quiz
-                            )
+                            putExtra("QUIZ", subTopic.quiz)
+                            putExtra("SUBJECT_NAME", subjectName)
+                            putExtra("SUBTOPIC_NAME", subTopic.name)
                         }
 
                         startActivity(intent)

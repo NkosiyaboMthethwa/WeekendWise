@@ -11,6 +11,8 @@
     <color name="subject_life_sciences">#4CAF50</color>
     <color name="subject_physical_sci">#4472C4</color>
     <color name="subject_accounting">#BF8F00</color>
+    <color name="subject_business">#8E24AA</color>
+    <color name="subject_geography">#D81B60</color>
     <color name="weekend_box_bg">#FFF0F0</color>
     <color name="weekend_box_border">#FFCDD2</color>
     <color name="progress_box_bg">#F5F5F5</color>

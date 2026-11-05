@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/resource_view_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -22,8 +23,8 @@
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back"
         android:src="@android:drawable/ic_menu_revert"
-        android:contentDescription="Back"
         app:layout_constraintBottom_toBottomOf="@+id/topBar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/topBar"
@@ -33,7 +34,7 @@
         android:id="@+id/tvResourceTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Resource View"
+        android:text="@string/resource_view"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -43,10 +44,12 @@
         app:layout_constraintTop_toTopOf="@+id/topBar" />
 
     <ScrollView
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topBar">
 
         <TextView
@@ -54,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:lineSpacingExtra="4sp"
-            android:text="Loading content..."
+            android:text="@string/loading_content"
             android:textColor="@color/black"
             android:textSize="16sp" />
     </ScrollView>

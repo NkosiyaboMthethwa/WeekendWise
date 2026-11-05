@@ -43,15 +43,18 @@ class RegisterActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            // Save credentials using SharedPreferences
+            // Encrypt password before saving
+            val encryptedPassword = SecurityUtils.hashPassword(password)
+
+            // Save credentials securely using SharedPreferences
             val sharedPreferences = getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
             val editor = sharedPreferences.edit()
             editor.putString("FULL_NAME", fullName)
             editor.putString("EMAIL", email)
-            editor.putString("PASSWORD", password)
+            editor.putString("PASSWORD", encryptedPassword)
             editor.apply()
 
-            Toast.makeText(this, "Registration successful! Please login.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Registration successful! Password encrypted securely.", Toast.LENGTH_SHORT).show()
             finish()
         }
     }

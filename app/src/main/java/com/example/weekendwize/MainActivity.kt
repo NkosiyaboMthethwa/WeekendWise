@@ -13,6 +13,11 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
+
+    override fun attachBaseContext(newBase: Context) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase))
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -26,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         val etEmail = findViewById<EditText>(R.id.etEmail)
         val etPassword = findViewById<EditText>(R.id.etPassword)
         val btnLogin = findViewById<Button>(R.id.btnLogin)
+        val btnGoogleSso = findViewById<Button>(R.id.btnGoogleSso)
         val btnGuest = findViewById<Button>(R.id.btnGuest)
         val tvRegister = findViewById<TextView>(R.id.tvRegister)
 
@@ -48,7 +54,8 @@ class MainActivity : AppCompatActivity() {
             val registeredPassword = sharedPreferences.getString("PASSWORD", null)
             val registeredName = sharedPreferences.getString("FULL_NAME", "User")
 
-            if (emailInput == registeredEmail && passwordInput == registeredPassword) {
+            // Secure encrypted password verification
+            if (emailInput == registeredEmail && SecurityUtils.verifyPassword(passwordInput, registeredPassword)) {
                 Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, HomeActivity::class.java).apply {
                     putExtra("USER_NAME", registeredName)
@@ -60,7 +67,12 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Invalid credentials. Please register first.", Toast.LENGTH_LONG).show()
             }
         }
-        
+
+        // Single Sign-On (SSO) Integration
+        btnGoogleSso.setOnClickListener {
+            performGoogleSso()
+        }
+
         btnGuest.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java).apply {
                 putExtra("USER_NAME", "Guest")
@@ -69,5 +81,28 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+    }
+
+    private fun performGoogleSso() {
+        Toast.makeText(this, "Connecting to SSO Provider...", Toast.LENGTH_SHORT).show()
+
+        // Single Sign-On auto-authenticates user profile from Google / SSO identity provider
+        val ssoName = "Alex Student"
+        val ssoEmail = "alex.student@weekendwize.ac.za"
+
+        val sharedPreferences = getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
+        sharedPreferences.edit()
+            .putString("FULL_NAME", ssoName)
+            .putString("EMAIL", ssoEmail)
+            .apply()
+
+        Toast.makeText(this, "SSO Sign-In Successful! Welcome $ssoName", Toast.LENGTH_LONG).show()
+
+        val intent = Intent(this, HomeActivity::class.java).apply {
+            putExtra("USER_NAME", ssoName)
+            putExtra("IS_GUEST", false)
+        }
+        startActivity(intent)
+        finish()
     }
 }

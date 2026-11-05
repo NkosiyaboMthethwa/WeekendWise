@@ -1,5 +1,6 @@
 package com.example.weekendwize
 
+import android.content.Context
 import android.os.Bundle
 import android.widget.Button
 import android.widget.RadioButton
@@ -14,6 +15,8 @@ import androidx.core.view.WindowInsetsCompat
 class QuizActivity : AppCompatActivity() {
     private var currentQuestionIndex = 0
     private lateinit var quiz: Quiz
+    private var subjectName: String = "General"
+    private var subTopicName: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,9 +29,15 @@ class QuizActivity : AppCompatActivity() {
             insets
         }
 
-        quiz = intent.getParcelableExtra("QUIZ") ?: Quiz(
-            listOf(Question("What is 2x + 3x?", listOf("4x", "5x", "6x", "7x"), 1))
-        )
+        quiz = intent.getParcelableExtra("QUIZ") ?: Quiz(emptyList())
+        subjectName = intent.getStringExtra("SUBJECT_NAME") ?: "General"
+        subTopicName = intent.getStringExtra("SUBTOPIC_NAME") ?: ""
+
+        if (quiz.questions.isEmpty()) {
+            Toast.makeText(this, "No questions found.", Toast.LENGTH_SHORT).show()
+            finish()
+            return
+        }
 
         displayQuestion()
 
@@ -59,9 +68,24 @@ class QuizActivity : AppCompatActivity() {
                 currentQuestionIndex++
                 displayQuestion()
             } else {
+                markQuizCompleted()
                 Toast.makeText(this, "Quiz completed!", Toast.LENGTH_LONG).show()
                 finish()
             }
+        }
+    }
+
+    private fun markQuizCompleted() {
+        val prefs = getSharedPreferences("AppProgress", Context.MODE_PRIVATE)
+        // Store that this specific quiz is completed
+        val key = "QUIZ_COMPLETED_${subjectName}_${subTopicName}"
+        if (!prefs.getBoolean(key, false)) {
+            prefs.edit().putBoolean(key, true).apply()
+            
+            // Also increment count for subject
+            val countKey = "QUIZ_COUNT_${subjectName}"
+            val currentCount = prefs.getInt(countKey, 0)
+            prefs.edit().putInt(countKey, currentCount + 1).apply()
         }
     }
 
