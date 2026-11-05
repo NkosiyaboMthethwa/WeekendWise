@@ -1,4 +1,4 @@
-#  WeekendWize - Release Notes v2.0 (Innovative Features)
+#  WeekendWize - (Innovative Features)
 
 We are thrilled to announce the official **v2.0 Release of WeekendWize**! This major release brings a suite of innovative features engineered specifically for Grade 11 High School CAPS learners in South Africa—combining offline-first persistence, multi-language accessibility, real-time cloud sync, security encryption, and automated CI/CD pipelines.
 
