@@ -55,7 +55,7 @@ We are thrilled to announce the official **v2.0 Release of WeekendWize**! This m
 
 ---
 
-## Summary of Version 2.0 Highlights
+## Summary
 - **SHA-256 Hashing & Google SSO**
 - **Offline SQLite Storage & Auto Firebase Sync**
 - **English, isiZulu & Afrikaans Support**
