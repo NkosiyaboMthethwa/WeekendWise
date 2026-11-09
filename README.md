@@ -6,12 +6,12 @@
 ![Min SDK](https://img.shields.io/badge/Min%20SDK-24%20%28Android%207.0%29-orange.svg)
 ![Target SDK](https://img.shields.io/badge/Target%20SDK-34%20%28Android%2014%29-red.svg)
 
-**WeekendWize** is an all-in-one mobile companion designed specifically for **Grade 11 High School Students** in South Africa. The application bridges the gap between theoretical learning and active recall testing while keeping students organized with a functional weekend study timetable, real-time cloud synchronization, multi-language accessibility, and automated progress tracking.
+WeekendWize is an all-in-one mobile companion designed specifically for Grade 11 High School Students in South Africa. The application bridges the gap between theoretical learning and active recall testing while keeping students organized with a functional weekend study timetable, real-time cloud synchronization, multi-language accessibility, and automated progress tracking.
 
 ---
 
 Video Demonstrations
-- **Full Video Demonstration**: [Watch on YouTube][(https://youtu.be/i15tblqFos0)](https://youtu.be/r8a_Kw1rW8k)
+- Full Video Demonstration: [Watch on YouTube][(https://youtu.be/i15tblqFos0)](https://youtu.be/r8a_Kw1rW8k)
 - https://drive.google.com/file/d/1WngtvoAFG7pXESGfRq7UR2TaLVuWyJEL/view?usp=drive_link 
 
 ---
